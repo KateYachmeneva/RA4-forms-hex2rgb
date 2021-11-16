@@ -10,9 +10,9 @@ const Converter = () => {
     const { value } = event.target;
     setHexInput(value);
     let result = "rgb(..., ..., ...)";
-    if (value.length === 7) {
+    if (value.length === 6) {
       result = hexToRgb(value) || "Error";
-    } else if (value.length > 7) {
+    } else if (value.length > 6) {
       result = "Error";
     }
     setRgbOutput(result);
